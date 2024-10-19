@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tvdt"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.1.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+django-stubs = {extras = ["compatible-mypy"], version = "^5.1.0"}
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "tvdt.settings"
