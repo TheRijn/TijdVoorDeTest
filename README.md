@@ -37,3 +37,8 @@ meegenomen in de berekening van de slechtste speler.
 
 TBD
 
+
+## Nice to haves
+
+- Optie voor antwoord geven in twee klikken (selecteren en volgende).
+

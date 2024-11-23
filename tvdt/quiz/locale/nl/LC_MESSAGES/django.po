@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-20 00:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: quiz/models/answer.py:10
+msgid "text"
+msgstr "tekst"
+
+#: quiz/models/answer.py:15 quiz/models/given_answer.py:21
+#: quiz/models/question.py:9 quiz/models/question.py:21
+msgid "question"
+msgstr "vraag"
+
+#: quiz/models/answer.py:17
+msgid "is right answer"
+msgstr "is goede antwoord"
+
+#: quiz/models/answer.py:19 quiz/models/candidate.py:25
+msgid "candidates"
+msgstr "kandidaten"
+
+#: quiz/models/answer.py:23 quiz/models/given_answer.py:24
+msgid "answer"
+msgstr "antwoord"
+
+#: quiz/models/answer.py:24
+msgid "answers"
+msgstr "antwoorden"
+
+#: quiz/models/candidate.py:15 quiz/models/quiz.py:9 quiz/models/season.py:12
+msgid "name"
+msgstr "naam"
+
+#: quiz/models/candidate.py:24 quiz/models/correction.py:14
+#: quiz/models/given_answer.py:15 quiz/models/quiz_time.py:11
+msgid "candidate"
+msgstr "kandidaat"
+
+#: quiz/models/correction.py:20 quiz/models/question.py:11
+#: quiz/models/quiz.py:26 quiz/models/quiz_time.py:13
+msgid "quiz"
+msgstr "test"
+
+#: quiz/models/correction.py:25
+msgid "correction"
+msgstr "joker"
+
+#: quiz/models/correction.py:26
+msgid "corrections"
+msgstr "jokers"
+
+#: quiz/models/given_answer.py:30
+msgid "given answer"
+msgstr "gegeven antwoord"
+
+#: quiz/models/given_answer.py:31
+msgid "given answers"
+msgstr "gegeven antwoorden"
+
+#: quiz/models/question.py:13
+msgid "number"
+msgstr "nummer"
+
+#: quiz/models/question.py:14
+msgid "enabled"
+msgstr "ingeschakeld"
+
+#: quiz/models/question.py:22
+msgid "questions"
+msgstr "vraag"
+
+#: quiz/models/quiz.py:14 quiz/models/season.py:38
+msgid "season"
+msgstr "seizoen"
+
+#: quiz/models/quiz.py:27
+msgid "quizzes"
+msgstr "tests"
+
+#: quiz/models/quiz_time.py:14
+msgid "seconds"
+msgstr "seconden"
+
+#: quiz/models/quiz_time.py:17
+msgid "quiz time"
+msgstr "testtijd"
+
+#: quiz/models/quiz_time.py:18
+msgid "quiz times"
+msgstr "testtijden"
+
+#: quiz/models/season.py:19
+msgid "active quiz"
+msgstr "actieve test"
+
+#: quiz/models/season.py:23
+msgid "season code"
+msgstr "seizoencode"
+
+#: quiz/models/season.py:26
+msgid "preregister candidates"
+msgstr "kandidaten voorregistreren"
+
+#: quiz/models/season.py:39
+msgid "seasons"
+msgstr "seizoenen"
