@@ -1,15 +1,17 @@
 from django.contrib import messages
 from django.core.exceptions import BadRequest
 from django.http import Http404, HttpRequest, HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect
+from django.urls import reverse
 from django.utils.translation import gettext as _
 from django.views import View
+from django.views.generic.base import TemplateResponseMixin
 
-from ..models import Candidate, Answer, GivenAnswer
-from ..models.question import NoActiveTestForSeason
+from ..models import Answer, Candidate, GivenAnswer
+from ..models.question import NoActiveTestForSeason, QuizAlreadyFinished
 
 
-class QuestionView(View):
+class QuestionView(View, TemplateResponseMixin):
     template_name = "quiz/question.html"
 
     def get(
@@ -18,14 +20,26 @@ class QuestionView(View):
         try:
             question = candidate.get_next_question(candidate)
         except NoActiveTestForSeason:
-            messages.error(request, _("No active Quiz for season"))
-            raise Http404("No active Quiz for seaon")
+            messages.error(request, _("No active quiz for season"))
+            return redirect("home")
+        except QuizAlreadyFinished:
+            if not kwargs.get("from_post"):
+                messages.error(request, _("Quiz done"))
 
-        return render(
-            request,
-            "quiz/question.html",
-            {"candidate": candidate, "question": question},
-        )
+            return redirect(reverse("quiz", kwargs={"season": candidate.season}))
+
+        # TODO: On first question -> record time
+        if (
+            GivenAnswer.objects.filter(
+                candidate=candidate, quiz=candidate.season.active_quiz
+            ).count()
+            == 0
+        ):
+            GivenAnswer.objects.create(
+                candidate=candidate, quiz=question.quiz, answer=None
+            )
+
+        return self.render_to_response({"candidate": candidate, "question": question})
 
     def post(self, request: HttpRequest, candidate: Candidate, *args, **kwargs):
         answer_id = request.POST.get("answer")
@@ -38,7 +52,8 @@ class QuestionView(View):
             raise BadRequest
 
         GivenAnswer.objects.create(
-            candidate=candidate, question=answer.question, answer=answer
+            candidate=candidate,
+            quiz=answer.question.quiz,
+            answer=answer,
         )
-
-        return self.get(request, candidate, args, kwargs)
+        return self.get(request, candidate, from_post=True)

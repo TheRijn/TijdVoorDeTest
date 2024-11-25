@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-20 00:23+0200\n"
+"POT-Creation-Date: 2024-11-25 19:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,92 +18,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: quiz/models/answer.py:10
-msgid "text"
-msgstr "tekst"
-
-#: quiz/models/answer.py:15 quiz/models/given_answer.py:21
-#: quiz/models/question.py:9 quiz/models/question.py:21
-msgid "question"
-msgstr "vraag"
-
-#: quiz/models/answer.py:17
-msgid "is right answer"
-msgstr "is goede antwoord"
-
-#: quiz/models/answer.py:19 quiz/models/candidate.py:25
-msgid "candidates"
-msgstr "kandidaten"
-
-#: quiz/models/answer.py:23 quiz/models/given_answer.py:24
-msgid "answer"
-msgstr "antwoord"
-
-#: quiz/models/answer.py:24
-msgid "answers"
-msgstr "antwoorden"
-
-#: quiz/models/candidate.py:15 quiz/models/quiz.py:9 quiz/models/season.py:12
-msgid "name"
-msgstr "naam"
-
-#: quiz/models/candidate.py:24 quiz/models/correction.py:14
-#: quiz/models/given_answer.py:15 quiz/models/quiz_time.py:11
-msgid "candidate"
-msgstr "kandidaat"
-
-#: quiz/models/correction.py:20 quiz/models/question.py:11
-#: quiz/models/quiz.py:26 quiz/models/quiz_time.py:13
+#: quiz/apps.py:8 quiz/models/correction.py:17 quiz/models/given_answer.py:19
+#: quiz/models/question.py:20 quiz/models/quiz.py:24
 msgid "quiz"
 msgstr "test"
 
-#: quiz/models/correction.py:25
+#: quiz/models/answer.py:7
+msgid "text"
+msgstr "tekst"
+
+#: quiz/models/answer.py:12 quiz/models/question.py:15
+#: quiz/models/question.py:28
+msgid "question"
+msgstr "vraag"
+
+#: quiz/models/answer.py:14
+msgid "is right answer"
+msgstr "is goede antwoord"
+
+#: quiz/models/answer.py:16 quiz/models/candidate.py:50
+msgid "candidates"
+msgstr "kandidaten"
+
+#: quiz/models/answer.py:20 quiz/models/given_answer.py:25
+msgid "answer"
+msgstr "antwoord"
+
+#: quiz/models/answer.py:21
+msgid "answers"
+msgstr "antwoorden"
+
+#: quiz/models/candidate.py:18 quiz/models/quiz.py:7 quiz/models/season.py:12
+msgid "name"
+msgstr "naam"
+
+#: quiz/models/candidate.py:49 quiz/models/correction.py:11
+#: quiz/models/given_answer.py:11
+msgid "candidate"
+msgstr "kandidaat"
+
+#: quiz/models/correction.py:22
 msgid "correction"
 msgstr "joker"
 
-#: quiz/models/correction.py:26
+#: quiz/models/correction.py:23
 msgid "corrections"
 msgstr "jokers"
 
-#: quiz/models/given_answer.py:30
+#: quiz/models/given_answer.py:36
 msgid "given answer"
 msgstr "gegeven antwoord"
 
-#: quiz/models/given_answer.py:31
+#: quiz/models/given_answer.py:37
 msgid "given answers"
 msgstr "gegeven antwoorden"
 
-#: quiz/models/question.py:13
-msgid "number"
-msgstr "nummer"
-
-#: quiz/models/question.py:14
-msgid "enabled"
-msgstr "ingeschakeld"
-
 #: quiz/models/question.py:22
+msgid "enabled"
+msgstr "actief"
+
+#: quiz/models/question.py:29
 msgid "questions"
 msgstr "vraag"
 
-#: quiz/models/quiz.py:14 quiz/models/season.py:38
+#: quiz/models/quiz.py:12 quiz/models/season.py:38
 msgid "season"
 msgstr "seizoen"
 
-#: quiz/models/quiz.py:27
+#: quiz/models/quiz.py:25
 msgid "quizzes"
 msgstr "tests"
-
-#: quiz/models/quiz_time.py:14
-msgid "seconds"
-msgstr "seconden"
-
-#: quiz/models/quiz_time.py:17
-msgid "quiz time"
-msgstr "testtijd"
-
-#: quiz/models/quiz_time.py:18
-msgid "quiz times"
-msgstr "testtijden"
 
 #: quiz/models/season.py:19
 msgid "active quiz"
@@ -120,3 +104,35 @@ msgstr "kandidaten voorregistreren"
 #: quiz/models/season.py:39
 msgid "seasons"
 msgstr "seizoenen"
+
+#: quiz/templates/quiz/question.html:11
+msgid "Weirdly enough this question has no answers..."
+msgstr "Raar genoeg heeft deze vraag geen antwoorden..."
+
+#: quiz/templates/quiz/select_season.html:4
+msgid "Tijd voor de test"
+msgstr "Tijd voor de test"
+
+#: quiz/views/enternameview.py:14
+msgid "Name"
+msgstr "Naam"
+
+#: quiz/views/enternameview.py:27
+msgid "This season has no active quiz."
+msgstr "Dit seizoen heeft geen actieve test."
+
+#: quiz/views/enternameview.py:39
+msgid "Candidate does not exist"
+msgstr "Kandidaat bestaat niet"
+
+#: quiz/views/questionview.py:23
+msgid "No active quiz for season"
+msgstr "Geen active test voor seizoen"
+
+#: quiz/views/questionview.py:27
+msgid "Quiz done"
+msgstr "Test klaar"
+
+#: quiz/views/selectseasonview.py:30
+msgid "Invalid season code"
+msgstr "Ongeldige seizoencode"

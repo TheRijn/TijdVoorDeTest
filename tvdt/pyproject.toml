@@ -6,7 +6,6 @@ package-mode = false
 python = "^3.12"
 Django = "^5.1.2"
 django-crispy-forms = "^2.3"
-crispy-tailwind = "^1.0.3"
 crispy-bootstrap5 = "^2024.10"
 django-allauth = "^65.1.0"
 

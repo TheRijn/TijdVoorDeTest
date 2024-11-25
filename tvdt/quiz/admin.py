@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Question, Answer, Candidate, Quiz, Season, GivenAnswer
+from .models import Answer, Candidate, GivenAnswer, Question, Quiz, Season
 
 
 class CandidatesAdmin(admin.StackedInline):

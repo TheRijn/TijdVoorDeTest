@@ -10,20 +10,28 @@ class GivenAnswer(models.Model):
         related_name="answers",
         verbose_name=_("candidate"),
     )
-    question = models.ForeignKey(
-        "Question",
+
+    quiz = models.ForeignKey(
+        "Quiz",
         on_delete=models.CASCADE,
-        null=True,
-        related_name="given_answers",
-        verbose_name=_("question"),
+        null=False,
+        related_name="+",
+        verbose_name=_("quiz"),
     )
+
     answer = models.ForeignKey(
-        "Answer", on_delete=models.CASCADE, verbose_name=_("answer")
+        "Answer",
+        on_delete=models.CASCADE,
+        verbose_name=_("answer"),
+        null=True,
     )
     created = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"{self.quiz} - {self.candidate.name} {self.answer}"
+
     class Meta(TypedModelMeta):
-        unique_together = ["candidate", "question"]
+        ordering = ("quiz", "candidate")
 
         verbose_name = _("given answer")
         verbose_name_plural = _("given answers")

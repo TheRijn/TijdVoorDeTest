@@ -1137,6 +1137,30 @@
   }
 },
 {
+  "model": "quiz.candidate",
+  "pk": 14,
+  "fields": {
+    "season": 1,
+    "name": "Marijn"
+  }
+},
+{
+  "model": "quiz.candidate",
+  "pk": 15,
+  "fields": {
+    "season": 1,
+    "name": "Renske"
+  }
+},
+{
+  "model": "quiz.candidate",
+  "pk": 16,
+  "fields": {
+    "season": 1,
+    "name": "Philine"
+  }
+},
+{
   "model": "quiz.quiz",
   "pk": 1,
   "fields": {

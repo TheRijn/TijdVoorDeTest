@@ -1,9 +1,12 @@
 from crispy_forms.helper import FormHelper
+from django import forms
+from django.contrib import messages
 from django.http import Http404
 from django.shortcuts import redirect
 from django.urls import reverse
+from django.utils.translation import gettext as _
 from django.views.generic.edit import FormView
-from django import forms
+from mypy.dmypy.client import request
 
 from ..models import Season
 
@@ -24,6 +27,7 @@ class SelectSeasonView(FormView):
         try:
             season = Season.objects.get(season_code=form.cleaned_data["code"].upper())
         except Season.DoesNotExist:
-            raise Http404("Season does not exist")
+            messages.warning(self.request, _("Invalid season code"))
+            return redirect("home")
 
         return redirect(reverse("quiz", kwargs={"season": season}))

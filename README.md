@@ -16,6 +16,7 @@ kunnen alleen vooraf ingevoerde namen gebruikt worden in een test.
 - Vanaf het moment dat de kandidaat op start klikt na het intypen van hun naam 
 gaat de tijd lopen. Deze stopt na het aanklikken van een antwoord op de laatste 
 vraag van de test.
+- Achtergrondmuziek
 
 
 ### Schermen kijken

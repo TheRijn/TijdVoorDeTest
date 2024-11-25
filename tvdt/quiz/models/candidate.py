@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from django_stubs_ext.db.models import TypedModelMeta
 
 from .given_answer import GivenAnswer
-from .question import NoActiveTestForSeason, QuizAlreadyFinished, Question
+from .question import NoActiveTestForSeason, Question, QuizAlreadyFinished
 
 
 class Candidate(models.Model):
@@ -23,11 +23,13 @@ class Candidate(models.Model):
             raise NoActiveTestForSeason()
 
         question = (
-            Question.objects.filter(quiz=quiz)
+            Question.objects.filter(quiz=quiz, enabled=True)
             .exclude(
                 id__in=GivenAnswer.objects.filter(
-                    candidate=candidate, question__quiz=quiz
-                ).values_list("question_id", flat=True)
+                    candidate=candidate,
+                    quiz=quiz,
+                    answer__isnull=False,
+                ).values_list("answer__question_id", flat=True)
             )
             .first()
         )

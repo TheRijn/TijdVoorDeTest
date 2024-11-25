@@ -1,7 +1,7 @@
 import base64
 import binascii
 
-from .models import Season, Candidate
+from .models import Candidate, Season
 
 
 class SeasonCodeConverter:

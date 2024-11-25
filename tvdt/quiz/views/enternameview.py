@@ -1,47 +1,47 @@
 from crispy_forms.helper import FormHelper
 from django import forms
-from django.http import Http404
-from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.shortcuts import redirect
 from django.urls import reverse
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 from django.views import View
+from django.views.generic.base import TemplateResponseMixin
 
-from ..models import Season, Candidate
+from ..models import Candidate, Season
 
 
 class EnterNameForm(forms.Form):
-    name = forms.CharField()
+    name = forms.CharField(label=_("Name"))
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
 
 
-class EnterNameView(View):
+class EnterNameView(View, TemplateResponseMixin):
     template_name = "quiz/enter_name.html"
     forms_class = EnterNameForm
 
     def get(self, request, season: Season, *args, **kwargs):
         if season.active_quiz == None:
-            raise Http404("No quiz active")
+            messages.info(request, _("This season has no active quiz."))
+            return redirect("home")
 
-        return render(
-            request,
-            self.template_name,
-            {"form": self.forms_class(), "season": season},
-        )
+        return self.render_to_response({"form": self.forms_class()})
 
     def post(self, request, season: Season, *args, **kwargs):
         name = request.POST.get("name")
 
-        if season.preregister_candidates:
-            try:
-                candidate = Candidate.objects.get(season=season, name=name)
-            except Candidate.DoesNotExist:
-                raise Http404("Candidate not found")
-        else:
-            candidate, created = Candidate.objects.get_or_create(
-                season=season, name=name
-            )
+        try:
+            candidate = Candidate.objects.get(season=season, name__iexact=name)
+        except Candidate.DoesNotExist:
+            if season.preregister_candidates:
+                messages.warning(request, _("Candidate does not exist"))
+
+                return redirect(reverse("quiz", kwargs={"season": season}))
+
+            candidate = Candidate.objects.create(season=season, name=name)
 
         return redirect(
             reverse(
