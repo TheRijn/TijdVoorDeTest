@@ -1,0 +1,16 @@
+FROM python:3.13 AS dev
+
+RUN apt-get update && apt-get install -y \
+    gettext
+
+RUN pip install poetry~=1.8
+
+WORKDIR /app
+
+ENV POETRY_VIRTUALENVS_IN_PROJECT=1 \
+    POETRY_VIRTUALENVS_CREATE=1
+
+ENV VIRTUAL_ENV=/app/.venv \
+    PATH="/app/.venv/bin:$PATH"
+
+ENTRYPOINT ["python","manage.py", "runserver", "0.0.0.0:8000"]

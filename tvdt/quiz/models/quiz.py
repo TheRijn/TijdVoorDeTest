@@ -13,7 +13,7 @@ class Quiz(models.Model):
     )
 
     def is_valid_quiz(self) -> bool:
-        pass
+        return True
         # Check > 0 active questions
         # Check every question 1 right answer
 

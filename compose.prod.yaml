@@ -1,0 +1,5 @@
+services:
+  app:
+    image: tvdt/app:prod
+    build:
+      dockerfile: containers/python/Containerfile.prod

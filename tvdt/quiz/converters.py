@@ -4,19 +4,6 @@ import binascii
 from .models import Candidate, Season
 
 
-class SeasonCodeConverter:
-    regex = r"[A-Za-z\d]{5}"
-
-    def to_python(self, value: str) -> Season:
-        try:
-            return Season.objects.get(season_code=value.upper())
-        except Season.DoesNotExist:
-            raise ValueError
-
-    def to_url(self, value: Season) -> str:
-        return value.season_code
-
-
 class CandidateConverter:
     regex = r"[A-Za-z\d]{5}\/[\w\-=]+"
 
@@ -29,7 +16,7 @@ class CandidateConverter:
             raise ValueError
 
         try:
-            season = Season.objects.get(season_code=season_code)
+            season = Season.objects.aget(season_code=season_code)
 
             candidate = Candidate.objects.get(name=name, season=season)
             return candidate

@@ -30,4 +30,10 @@ class SelectSeasonView(FormView):
             messages.warning(self.request, _("Invalid season code"))
             return redirect("home")
 
+        from environs import Env
+
+        env = Env()
+        env.read_env()
+        print(env.dump())
+
         return redirect(reverse("quiz", kwargs={"season": season}))

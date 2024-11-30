@@ -1,0 +1,36 @@
+FROM python:3.13 AS builder
+
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
+    gettext
+
+RUN pip install --no-cache-dir poetry==1.8
+
+WORKDIR /app
+
+ENV POETRY_NO_INTERACTION=1 \
+    POETRY_VIRTUALENVS_IN_PROJECT=1 \
+    POETRY_VIRTUALENVS_CREATE=1 \
+    POETRY_CACHE_DIR=/tmp/poetry_cache
+
+COPY tvdt/pyproject.toml tvdt/poetry.lock ./
+
+RUN poetry install --without dev
+
+COPY ./tvdt/ .
+
+ENV VIRTUAL_ENV=/app/.venv \
+    PATH="/app/.venv/bin:$PATH"
+
+RUN python manage.py compilemessages  --ignore .venv \
+    && python manage.py collectstatic
+
+FROM python:3.13 AS runtime
+
+WORKDIR /app
+
+ENV VIRTUAL_ENV=/app/.venv \
+    PATH="/app/.venv/bin:$PATH"
+
+COPY --from=builder /app /app
+
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8000", "tvdt.wsgi", ""]

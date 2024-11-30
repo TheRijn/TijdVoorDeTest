@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      dockerfile: containers/python/Containerfile.dev
+    ports:
+      - "8000:8000"
+
+    environment:
+      DATABASE_URL: postgres://tvdt:tvdt@db:5432/tvdt
+      DEBUG: true
+    depends_on:
+      - db
+  db:
+    image: postgres:17.2
+    environment:
+      POSTGRES_PASSWORD: tvdt
+      POSTGRES_USER: tvdt
+      POSTGRES_DB: tvdt
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  data:

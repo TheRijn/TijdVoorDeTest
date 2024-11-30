@@ -10,25 +10,10 @@
             crossorigin="anonymous"></script>
     <title>{% block title %}{% endblock %}</title>
     <style>
-        html, body {
-            height: 100%;
-            background-image: url("{% static "quiz/background.png" %}");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-color: black;
-            color: white;
-
-            display: grid;
-            align-items: center;
-            justify-self: center;
-        }
-
-        .asteriskField {
-            display: none;
-        }
     </style>
 </head>
 <body>
+{% block nav %}{% endblock %}
 <main>
     <div class="container">
         {% if messages %}

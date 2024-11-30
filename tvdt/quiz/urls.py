@@ -1,6 +1,8 @@
 from django.urls import path, register_converter
 
-from .converters import CandidateConverter, SeasonCodeConverter
+from tvdt.converters import SeasonCodeConverter
+
+from .converters import CandidateConverter
 from .views import SelectSeasonView
 from .views.enternameview import EnterNameView
 from .views.questionview import QuestionView
