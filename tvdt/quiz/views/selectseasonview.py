@@ -36,4 +36,4 @@ class SelectSeasonView(FormView):
         env.read_env()
         print(env.dump())
 
-        return redirect(reverse("quiz", kwargs={"season": season}))
+        return redirect(reverse("enter_name", kwargs={"season": season}))

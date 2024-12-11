@@ -891,6 +891,864 @@
   }
 },
 {
+  "model": "quiz.answer",
+  "pk": 83,
+  "fields": {
+    "text": "Man",
+    "question": 16,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 84,
+  "fields": {
+    "text": "Vrouw",
+    "question": 16,
+    "is_right_answer": true,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 85,
+  "fields": {
+    "text": "Nee",
+    "question": 17,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 86,
+  "fields": {
+    "text": "De Krtek is vegetariër",
+    "question": 17,
+    "is_right_answer": true,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 87,
+  "fields": {
+    "text": "De Krtek is flexitariër",
+    "question": 17,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 88,
+  "fields": {
+    "text": "De Krtek heeft een allergie",
+    "question": 17,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 89,
+  "fields": {
+    "text": "De Krtek heeft een intolerantie",
+    "question": 17,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 90,
+  "fields": {
+    "text": "De Krtek eet geen rundvlees",
+    "question": 17,
+    "is_right_answer": false,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 91,
+  "fields": {
+    "text": "De Krtek eet geen waterdieren",
+    "question": 17,
+    "is_right_answer": false,
+    "_order": 6,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 92,
+  "fields": {
+    "text": "Amy, Karel en Floyd",
+    "question": 18,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 93,
+  "fields": {
+    "text": "Flip en Majoor",
+    "question": 18,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 94,
+  "fields": {
+    "text": "Benji",
+    "question": 18,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 95,
+  "fields": {
+    "text": "Sini",
+    "question": 18,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 96,
+  "fields": {
+    "text": "De huisdieren van de Krtek hebben geen naam",
+    "question": 18,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 97,
+  "fields": {
+    "text": "De Krtek heeft geen huisdieren",
+    "question": 18,
+    "is_right_answer": true,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 98,
+  "fields": {
+    "text": "Koffie",
+    "question": 19,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 99,
+  "fields": {
+    "text": "Thee",
+    "question": 19,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 100,
+  "fields": {
+    "text": "Water",
+    "question": 19,
+    "is_right_answer": true,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 101,
+  "fields": {
+    "text": "Melk",
+    "question": 19,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 102,
+  "fields": {
+    "text": "Sap",
+    "question": 19,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 103,
+  "fields": {
+    "text": "Niks",
+    "question": 19,
+    "is_right_answer": false,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 104,
+  "fields": {
+    "text": "Denemarken",
+    "question": 20,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 105,
+  "fields": {
+    "text": "Drenthe",
+    "question": 20,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 106,
+  "fields": {
+    "text": "Mallorca",
+    "question": 20,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 107,
+  "fields": {
+    "text": "Marokko",
+    "question": 20,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 108,
+  "fields": {
+    "text": "Oostenrijk",
+    "question": 20,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 109,
+  "fields": {
+    "text": "Turkije",
+    "question": 20,
+    "is_right_answer": false,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 110,
+  "fields": {
+    "text": "Zweden",
+    "question": 20,
+    "is_right_answer": true,
+    "_order": 6,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 111,
+  "fields": {
+    "text": "Het eerste groepje",
+    "question": 21,
+    "is_right_answer": true,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 112,
+  "fields": {
+    "text": "Het tweede groepje",
+    "question": 21,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 113,
+  "fields": {
+    "text": "Het derde groepje",
+    "question": 21,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 114,
+  "fields": {
+    "text": "Het vierde groepje",
+    "question": 21,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 115,
+  "fields": {
+    "text": "Het vijfde groepje",
+    "question": 21,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 116,
+  "fields": {
+    "text": "Nee",
+    "question": 22,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 117,
+  "fields": {
+    "text": "Het universum",
+    "question": 22,
+    "is_right_answer": true,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 118,
+  "fields": {
+    "text": "Toeval",
+    "question": 22,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 119,
+  "fields": {
+    "text": "De Krtek is hindoeïstisch",
+    "question": 22,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 120,
+  "fields": {
+    "text": "Ja",
+    "question": 23,
+    "is_right_answer": true,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 121,
+  "fields": {
+    "text": "Nee",
+    "question": 23,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 122,
+  "fields": {
+    "text": "Tussen 0:00 en 0:59 uur",
+    "question": 24,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 123,
+  "fields": {
+    "text": "Tussen 1:00 en 1:59 uur",
+    "question": 24,
+    "is_right_answer": true,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 124,
+  "fields": {
+    "text": "Tussen 2:00 en 2:59 uur",
+    "question": 24,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 125,
+  "fields": {
+    "text": "Na 3:00",
+    "question": 24,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 126,
+  "fields": {
+    "text": "1",
+    "question": 25,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 127,
+  "fields": {
+    "text": "2",
+    "question": 25,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 128,
+  "fields": {
+    "text": "3",
+    "question": 25,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 129,
+  "fields": {
+    "text": "Geen",
+    "question": 25,
+    "is_right_answer": true,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 130,
+  "fields": {
+    "text": "Digimon",
+    "question": 26,
+    "is_right_answer": true,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 131,
+  "fields": {
+    "text": "Floris",
+    "question": 26,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 132,
+  "fields": {
+    "text": "Het huis Anubis",
+    "question": 26,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 133,
+  "fields": {
+    "text": "Sesamstraat",
+    "question": 26,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 134,
+  "fields": {
+    "text": "Spongebob Squarepants",
+    "question": 26,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 135,
+  "fields": {
+    "text": "Teletubbies",
+    "question": 26,
+    "is_right_answer": false,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 136,
+  "fields": {
+    "text": "In koffer(s)",
+    "question": 27,
+    "is_right_answer": true,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 137,
+  "fields": {
+    "text": "In losse tas(sen)",
+    "question": 27,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 138,
+  "fields": {
+    "text": "In een rugzak",
+    "question": 27,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 139,
+  "fields": {
+    "text": "Een vork die door een metalen pan krast",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 140,
+  "fields": {
+    "text": "Smakkende mensen",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 141,
+  "fields": {
+    "text": "Een vork die over een bord schraapt",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 142,
+  "fields": {
+    "text": "Schuren met schuurpapier",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 143,
+  "fields": {
+    "text": "Nagels op een krijtbord",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 144,
+  "fields": {
+    "text": "Servies dat tegen elkaar klettert",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 145,
+  "fields": {
+    "text": "Het geroekoe van een duif",
+    "question": 28,
+    "is_right_answer": true,
+    "_order": 6,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 146,
+  "fields": {
+    "text": "Piepschuim",
+    "question": 28,
+    "is_right_answer": false,
+    "_order": 7,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 147,
+  "fields": {
+    "text": "Ja",
+    "question": 29,
+    "is_right_answer": false,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 148,
+  "fields": {
+    "text": "Nee",
+    "question": 29,
+    "is_right_answer": true,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 149,
+  "fields": {
+    "text": "Claudia",
+    "question": 30,
+    "is_right_answer": true,
+    "_order": 0,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 150,
+  "fields": {
+    "text": "Eelco",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 1,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 151,
+  "fields": {
+    "text": "Elise",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 2,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 152,
+  "fields": {
+    "text": "Gert-Jan",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 3,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 153,
+  "fields": {
+    "text": "Iris",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 4,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 154,
+  "fields": {
+    "text": "Jari",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 5,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 155,
+  "fields": {
+    "text": "Lara",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 6,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 156,
+  "fields": {
+    "text": "Lotte",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 7,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 157,
+  "fields": {
+    "text": "Myrthe",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 8,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 158,
+  "fields": {
+    "text": "Remy",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 9,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 159,
+  "fields": {
+    "text": "Robbert",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 10,
+    "candidates": []
+  }
+},
+{
+  "model": "quiz.answer",
+  "pk": 160,
+  "fields": {
+    "text": "Tom",
+    "question": 30,
+    "is_right_answer": false,
+    "_order": 11,
+    "candidates": []
+  }
+},
+{
   "model": "quiz.question",
   "pk": 1,
   "fields": {
@@ -1041,6 +1899,156 @@
   }
 },
 {
+  "model": "quiz.question",
+  "pk": 16,
+  "fields": {
+    "question": "Is de Krtek een man of een vrouw?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 0
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 17,
+  "fields": {
+    "question": "Heeft de Krtek dieetwensen of allergieën?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 1
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 18,
+  "fields": {
+    "question": "Hoe heet het huisdier/de huisdieren van de Krtek?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 2
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 19,
+  "fields": {
+    "question": "Wat dronk de Krtek deze ochtend bij het ontbijt?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 3
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 20,
+  "fields": {
+    "question": "Waar ging de eerste vakantie die de Krtek zich nog herinnert heen?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 4
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 21,
+  "fields": {
+    "question": "Met welk groepje ging de Krtek als eerste het Douanespel in?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 5
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 22,
+  "fields": {
+    "question": "Gelooft de Krtek ergens in?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 6
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 23,
+  "fields": {
+    "question": "At de Krtek op vrijdagavond heksenkaas tijdens het diner?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 7
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 24,
+  "fields": {
+    "question": "Hoe laat ging de Krtek gisteravond naar bed?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 8
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 25,
+  "fields": {
+    "question": "Hoeveel batterijen heeft de krtek naar het bord gebracht bij het douanespel?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 9
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 26,
+  "fields": {
+    "question": "Wat keek de Krtek als kind graag op TV?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 10
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 27,
+  "fields": {
+    "question": "Waarin zat op de heenreis de bagage van de Krtek (voornamelijk)?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 11
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 28,
+  "fields": {
+    "question": "Van welk geluid gaan de haren van de Krtek overeind staan?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 12
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 29,
+  "fields": {
+    "question": "Wilde de Krtek penningmeester worden?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 13
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 30,
+  "fields": {
+    "question": "Wie is de Krtek?",
+    "quiz": 2,
+    "enabled": true,
+    "_order": 14
+  }
+},
+{
   "model": "quiz.candidate",
   "pk": 1,
   "fields": {
@@ -1169,13 +2177,22 @@
   }
 },
 {
+  "model": "quiz.quiz",
+  "pk": 2,
+  "fields": {
+    "name": "Test 2",
+    "season": 1
+  }
+},
+{
   "model": "quiz.season",
   "pk": 1,
   "fields": {
     "name": "Krtek",
     "active_quiz": 1,
     "season_code": "12345",
-    "preregister_candidates": true
+    "preregister_candidates": true,
+    "owner": []
   }
 }
 ]

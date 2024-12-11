@@ -26,7 +26,7 @@ class QuestionView(View, TemplateResponseMixin):
             if not kwargs.get("from_post"):
                 messages.error(request, _("Quiz done"))
 
-            return redirect(reverse("quiz", kwargs={"season": candidate.season}))
+            return redirect(reverse("enter_name", kwargs={"season": candidate.season}))
 
         # TODO: On first question -> record time
         if (

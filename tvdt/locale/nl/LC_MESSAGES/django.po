@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 12:18+0100\n"
+"POT-Creation-Date: 2024-12-11 23:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: tvdt/settings.py:147
+#: backoffice/templates/backoffice/base.html:18
+msgid "Tijd voor de test"
+msgstr "Tijd voor de test"
+
+#: backoffice/templates/backoffice/index.html:4
+msgid "Your Seasons"
+msgstr "Jouw seizoenen"
+
+#: backoffice/templates/backoffice/index.html:8
+msgid "Name"
+msgstr "Naam"
+
+#: backoffice/templates/backoffice/index.html:9
+msgid "Active Quiz"
+msgstr "Actieve test"
+
+#: backoffice/templates/backoffice/index.html:10
+msgid "Season Code"
+msgstr "Seizoenscode"
+
+#: backoffice/templates/backoffice/index.html:11
+msgid "Preregister?"
+msgstr "Voorregistreren?"
+
+#: backoffice/templates/backoffice/index.html:12
+#: backoffice/templates/backoffice/index.html:37
+msgid "Manage"
+msgstr "Beheer"
+
+#: backoffice/templates/backoffice/index.html:23
+msgid "No active quiz"
+msgstr "Geen actieve test"
+
+#: backoffice/templates/backoffice/quiz.html:5
+msgid "Quiz"
+msgstr "Test"
+
+#: backoffice/templates/backoffice/quiz.html:9
+msgid "Questions"
+msgstr "Vragen"
+
+#: backoffice/templates/backoffice/quiz.html:36
+msgid "There are no answers for this question"
+msgstr "Er zijn geen antwoorden voor deze vraag"
+
+#: backoffice/templates/backoffice/quiz.html:48
+#: backoffice/templates/backoffice/quiz.html:66
+msgid "Score"
+msgstr "Score"
+
+#: backoffice/templates/backoffice/quiz.html:52
+msgid "Start Elimination"
+msgstr "Start eliminatie"
+
+#: backoffice/templates/backoffice/quiz.html:55
+msgid "Prepare Custom Elimination"
+msgstr "Aangepaste eliminatie voorbereiden"
+
+#: backoffice/templates/backoffice/quiz.html:56
+msgid "Load Prepared Elimination"
+msgstr "Aangepaste eliminatie inladen"
+
+#: backoffice/templates/backoffice/quiz.html:59
+msgid "Number of dropouts:"
+msgstr "Aantal afvallers:"
+
+#: backoffice/templates/backoffice/quiz.html:63
+msgid "Candidate"
+msgstr "Kandidaat"
+
+#: backoffice/templates/backoffice/quiz.html:64
+msgid "Correct Answers"
+msgstr "Goede antwoorden"
+
+#: backoffice/templates/backoffice/quiz.html:65
+msgid "Corrections"
+msgstr "Jokers"
+
+#: backoffice/templates/backoffice/quiz.html:67
+msgid "Time"
+msgstr "Tijd"
+
+#: backoffice/templates/backoffice/season.html:5
+msgid "Season"
+msgstr "Seizoen"
+
+#: backoffice/templates/backoffice/season.html:9
+
+msgid "Quizzes"
+msgstr "Tests"
+
+#: backoffice/templates/backoffice/season.html:21
+msgid "Candidates"
+msgstr "Kandidaten"
+
+#: tvdt/settings.py:173
 msgid "Dutch"
 msgstr "Nederlands"
 
-#: tvdt/settings.py:147
+#: tvdt/settings.py:173
 msgid "English"
 msgstr "Engels"

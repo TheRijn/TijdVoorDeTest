@@ -16,7 +16,7 @@ class CandidateConverter:
             raise ValueError
 
         try:
-            season = Season.objects.aget(season_code=season_code)
+            season = Season.objects.get(season_code=season_code)
 
             candidate = Candidate.objects.get(name=name, season=season)
             return candidate

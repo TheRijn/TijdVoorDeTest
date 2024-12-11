@@ -1,14 +1,18 @@
-{% extends 'quiz/base.html' %}
+{% extends "quiz/base.html" %}
 {% load i18n %}
-
 {% block body %}
     <h2>{{ question.question }}</h2>
     <form method="post">
-    {% csrf_token %}
-    {% for answer in question.answers.all %}
-        <div><button class="btn btn-outline-success" type="submit" name="answer" value="{{ answer.id }}">{{ answer.text }}</button></div>
-    {% empty %}
-    {% translate "Weirdly enough this question has no answers..." %}
-    {% endfor %}
+        {% csrf_token %}
+        {% for answer in question.answers.all %}
+            <div>
+                <button class="btn btn-outline-success"
+                        type="submit"
+                        name="answer"
+                        value="{{ answer.id }}">{{ answer.text }}</button>
+            </div>
+        {% empty %}
+            {% translate "Weirdly enough this question has no answers..." %}
+        {% endfor %}
     </form>
-{% endblock %}
+{% endblock body %}

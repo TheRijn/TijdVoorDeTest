@@ -1,8 +1,11 @@
+from typing import final
+
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_stubs_ext.db.models import TypedModelMeta
 
 
+@final
 class Answer(models.Model):
     text = models.CharField(max_length=64, verbose_name=_("text"))
     question = models.ForeignKey(

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 19:18+0100\n"
+"POT-Creation-Date: 2024-12-11 23:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,36 +19,36 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: quiz/apps.py:8 quiz/models/correction.py:17 quiz/models/given_answer.py:19
-#: quiz/models/question.py:20 quiz/models/quiz.py:24
+#: quiz/models/question.py:23 quiz/models/quiz.py:60
 msgid "quiz"
 msgstr "test"
 
-#: quiz/models/answer.py:7
+#: quiz/models/answer.py:10
 msgid "text"
 msgstr "tekst"
 
-#: quiz/models/answer.py:12 quiz/models/question.py:15
-#: quiz/models/question.py:28
+#: quiz/models/answer.py:15 quiz/models/question.py:18
+#: quiz/models/question.py:58
 msgid "question"
 msgstr "vraag"
 
-#: quiz/models/answer.py:14
+#: quiz/models/answer.py:17
 msgid "is right answer"
 msgstr "is goede antwoord"
 
-#: quiz/models/answer.py:16 quiz/models/candidate.py:50
+#: quiz/models/answer.py:19 quiz/models/candidate.py:50
 msgid "candidates"
 msgstr "kandidaten"
 
-#: quiz/models/answer.py:20 quiz/models/given_answer.py:25
+#: quiz/models/answer.py:23 quiz/models/given_answer.py:25
 msgid "answer"
 msgstr "antwoord"
 
-#: quiz/models/answer.py:21
+#: quiz/models/answer.py:24
 msgid "answers"
 msgstr "antwoorden"
 
-#: quiz/models/candidate.py:18 quiz/models/quiz.py:7 quiz/models/season.py:12
+#: quiz/models/candidate.py:18 quiz/models/quiz.py:12 quiz/models/season.py:12
 msgid "name"
 msgstr "naam"
 
@@ -57,11 +57,15 @@ msgstr "naam"
 msgid "candidate"
 msgstr "kandidaat"
 
-#: quiz/models/correction.py:22
+#: quiz/models/correction.py:19
+msgid "amount"
+msgstr "aantal"
+
+#: quiz/models/correction.py:23
 msgid "correction"
 msgstr "joker"
 
-#: quiz/models/correction.py:23
+#: quiz/models/correction.py:24
 msgid "corrections"
 msgstr "jokers"
 
@@ -73,19 +77,35 @@ msgstr "gegeven antwoord"
 msgid "given answers"
 msgstr "gegeven antwoorden"
 
-#: quiz/models/question.py:22
+#: quiz/models/question.py:25
 msgid "enabled"
 msgstr "actief"
 
-#: quiz/models/question.py:29
+#: quiz/models/question.py:42
+msgid "Error: Question has no answers"
+msgstr "Fout: Raar genoeg heeft deze vraag geen antwoorden..."
+
+#: quiz/models/question.py:47
+msgid "Error: This question has no right answer!"
+msgstr "Fout: Raar genoeg heeft deze vraag geen antwoorden..."
+
+#: quiz/models/question.py:50
+msgid "Warning: This question has multiple correct answers"
+msgstr "Waarschuwing: Raar genoeg heeft deze vraag geen antwoorden..."
+
+#: quiz/models/question.py:59
 msgid "questions"
 msgstr "vraag"
 
-#: quiz/models/quiz.py:12 quiz/models/season.py:38
+#: quiz/models/quiz.py:17 quiz/models/season.py:43
 msgid "season"
 msgstr "seizoen"
 
-#: quiz/models/quiz.py:25
+#: quiz/models/quiz.py:21
+msgid "dropouts"
+msgstr "afvallers"
+
+#: quiz/models/quiz.py:61
 msgid "quizzes"
 msgstr "tests"
 
@@ -101,27 +121,31 @@ msgstr "seizoencode"
 msgid "preregister candidates"
 msgstr "kandidaten voorregistreren"
 
-#: quiz/models/season.py:39
+#: quiz/models/season.py:30
+msgid "owners"
+msgstr "eigenaren"
+
+#: quiz/models/season.py:44
 msgid "seasons"
 msgstr "seizoenen"
 
-#: quiz/templates/quiz/question.html:11
-msgid "Weirdly enough this question has no answers..."
-msgstr "Raar genoeg heeft deze vraag geen antwoorden..."
-
-#: quiz/templates/quiz/select_season.html:4
+#: quiz/templates/quiz/base.html:16
 msgid "Tijd voor de test"
 msgstr "Tijd voor de test"
 
-#: quiz/views/enternameview.py:14
+#: quiz/templates/quiz/question.html:15
+msgid "Weirdly enough this question has no answers..."
+msgstr "Raar genoeg heeft deze vraag geen antwoorden..."
+
+#: quiz/views/enternameview.py:15
 msgid "Name"
 msgstr "Naam"
 
-#: quiz/views/enternameview.py:27
+#: quiz/views/enternameview.py:28
 msgid "This season has no active quiz."
 msgstr "Dit seizoen heeft geen actieve test."
 
-#: quiz/views/enternameview.py:39
+#: quiz/views/enternameview.py:40
 msgid "Candidate does not exist"
 msgstr "Kandidaat bestaat niet"
 

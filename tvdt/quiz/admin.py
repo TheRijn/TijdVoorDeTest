@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Answer, Candidate, GivenAnswer, Question, Quiz, Season
+from .models import Answer, Candidate, Correction, GivenAnswer, Question, Quiz, Season
 
 
 class CandidatesAdmin(admin.StackedInline):
@@ -30,6 +30,8 @@ class AnswerInline(admin.TabularInline):
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
+    list_display = ["question", "quiz__season__name", "quiz__name", "_order"]
+    ordering = ["quiz__season", "quiz", "_order"]
     inlines = [AnswerInline]
 
 
@@ -40,4 +42,9 @@ class CandidateAdmin(admin.ModelAdmin):
 
 @admin.register(GivenAnswer)
 class GivenAnswerAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Correction)
+class CorrextionAdmin(admin.ModelAdmin):
     pass

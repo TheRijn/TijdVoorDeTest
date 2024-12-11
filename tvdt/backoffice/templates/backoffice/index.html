@@ -1,0 +1,45 @@
+{% extends "backoffice/base.html" %}
+{% load i18n %}
+{% block body %}
+    <h2>{% translate "Your Seasons" %}</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">{% translate "Name" %}</th>
+                <th scope="col">{% translate "Active Quiz" %}</th>
+                <th scope="col">{% translate "Season Code" %}</th>
+                <th scope="col">{% translate "Preregister?" %}</th>
+                <th scope="col">{% translate "Manage" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for season in seasons %}
+                <tr class="align-middle">
+                    <td>{{ season.name }}</td>
+                    <td>
+                        {% if season.active_quiz %}
+                            {{ season.active_quiz.name }}
+                        {% else %}
+                            {% translate "No active quiz" %}
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a {% if season.active_quiz %}href="{% url "enter_name" season %}"{% else %}class="disabled" {% endif %}>{{ season.season_code }}</a>
+                    </td>
+                    <td>
+                        <input class="form-check-input"
+                               type="checkbox"
+                               disabled
+                               {% if season.preregister_candidates %}checked{% endif %}
+                               aria-label="Preregister Enabled">
+                    </td>
+                    <td>
+                        <a href="{% url "backoffice:season" season %}">{% translate "Manage" %}</a>
+                    </td>
+                </tr>
+            {% empty %}
+                EMPTY
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock body %}

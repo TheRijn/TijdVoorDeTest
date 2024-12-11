@@ -10,7 +10,8 @@ from .views.questionview import QuestionView
 register_converter(SeasonCodeConverter, "season")
 register_converter(CandidateConverter, "candidate")
 urlpatterns = [
-    path("", SelectSeasonView.as_view(), name="home"),
-    path("<season:season>/", EnterNameView.as_view(), name="quiz"),
+    path("", SelectSeasonView.as_view(), name="index"),
+    path("<season:season>/", EnterNameView.as_view(), name="enter_name"),
     path("<candidate:candidate>/", QuestionView.as_view(), name="question"),
+    # path("<>")
 ]

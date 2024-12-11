@@ -16,9 +16,9 @@ psycopg2 = "^2.9.10"
 mypy = "^1.11.0"
 black = "^24.10.0"
 isort = "^5.13.2"
+djlint = "^1.36.3"
 
 [tool.poetry.group.prod.dependencies]
-uvicorn-worker = "^0.2.0"
 gunicorn = "^23.0.0"
 
 [tool.isort]
@@ -29,3 +29,6 @@ plugins = ["mypy_django_plugin.main"]
 
 [tool.django-stubs]
 django_settings_module = "tvdt.settings"
+
+[tool.djlint]
+profile="django"

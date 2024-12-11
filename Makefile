@@ -31,7 +31,9 @@ migrate: ## Migrate the database to the latest version
 	@${DOCKER_EXEC} python manage.py migrate
 
 .PHONY: compilemessages
-compilemessages:  ## Compile translations
+messages:  ## Compile translations
+	@echo ✨ Finding translations
+	@${DOCKER_EXEC} python manage.py makemessages -l nl
 	@echo ✨ Compiling translations
 	@${DOCKER_EXEC} python manage.py compilemessages  --ignore .venv
 
@@ -50,7 +52,7 @@ _clean:
 	@echo ✨ Stopping containers
 	@docker compose down -v
 	@echo ✨ Removing compiled files
-	@rm -f tvdt/**/locale/*/LC_MESSAGES/django.mo
+	@rm -f tvdt/*/locale/*/LC_MESSAGES/django.mo tvdt/locale/*/LC_MESSAGES/django.mo
 
 .PHONY: clean
 clean: _clean init

@@ -1,11 +1,11 @@
-import random
-import string
-
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_stubs_ext.db.models import TypedModelMeta
 
 from ..helpers import generate_season_code
+
+User = get_user_model()
 
 
 class Season(models.Model):
@@ -24,6 +24,11 @@ class Season(models.Model):
     )
     preregister_candidates = models.BooleanField(
         default=True, verbose_name=_("preregister candidates")
+    )
+    owner = models.ManyToManyField(
+        User,
+        verbose_name=_("owners"),
+        related_name="seasons",
     )
 
     def renew_season_code(self) -> str:
